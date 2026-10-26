@@ -1,0 +1,37 @@
+{
+  "name": "songwriting-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:desktop": "node scripts/build-desktop.mjs",
+    "desktop:build": "node scripts/build-native.mjs --bundles nsis",
+    "desktop:build:msi": "node scripts/build-native.mjs --bundles msi",
+    "desktop:build:windows": "node scripts/build-native.mjs --bundles nsis,msi",
+    "desktop:verify:windows": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/verify-windows-installation.ps1",
+    "start": "next start",
+    "tauri": "tauri",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "tsc -p tsconfig.test.json && node --test .test-dist/tests/project-repository.test.js .test-dist/tests/ai-coach.test.js .test-dist/tests/garageband-practice.test.js .test-dist/tests/ux-navigation.test.js .test-dist/tests/desktop-storage.test.js"
+  },
+  "dependencies": {
+    "next": "16.3.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@tauri-apps/cli": "2.11.5",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "fake-indexeddb": "^6.2.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@11.19.0"
+}

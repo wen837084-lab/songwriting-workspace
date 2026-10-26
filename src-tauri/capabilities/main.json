@@ -1,0 +1,7 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "main",
+  "description": "Core permissions for the primary Songwriting Workspace window.",
+  "windows": ["main"],
+  "permissions": ["core:default"]
+}

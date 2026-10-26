@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="Songwriting Workspace application icon">
+  <rect width="1024" height="1024" rx="224" fill="#20282a"/>
+  <path d="M248 286c0-44 36-80 80-80h368c44 0 80 36 80 80v452c0 44-36 80-80 80H328c-44 0-80-36-80-80z" fill="#f7f1e7"/>
+  <path d="M248 326h528v92H248z" fill="#d87867"/>
+  <path d="M330 591h72l34-112 64 216 54-169 42 112 35-75h63" fill="none" stroke="#20282a" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="337" cy="372" r="19" fill="#20282a"/>
+  <circle cx="397" cy="372" r="19" fill="#20282a"/>
+  <path d="M647 250h76v116h-76z" fill="#a9b9a4"/>
+</svg>

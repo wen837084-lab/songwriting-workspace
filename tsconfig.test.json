@@ -1,0 +1,24 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "incremental": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "outDir": ".test-dist",
+    "target": "ES2022"
+  },
+  "include": [
+    "src/domain/**/*.ts",
+    "src/application/ports/**/*.ts",
+    "src/application/ai-coach/**/*.ts",
+    "src/application/melody/**/*.ts",
+    "src/application/versions/**/*.ts",
+    "src/infrastructure/persistence/**/*.ts",
+    "src/infrastructure/ai/ai-coach-endpoint.ts",
+    "src/infrastructure/ai/remote-ai-coach-client.ts",
+    "src/infrastructure/ai/ai-coach-backend-security.ts",
+    "tests/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
